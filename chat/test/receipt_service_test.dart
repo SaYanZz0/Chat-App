@@ -30,7 +30,7 @@ void main() {
     Receipt receipt = Receipt(
         receipient: '444',
         messageId: '1234',
-        status: ReceiptStatus.deleivred,
+        status: ReceiptStatus.deliverred,
         timestamp: DateTime.now());
 
     final res = await sut.send(receipt);

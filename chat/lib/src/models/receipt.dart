@@ -1,4 +1,4 @@
-enum ReceiptStatus { sent, deleivred, read }
+enum ReceiptStatus { sent, deliverred, read }
 
 extension EnumParsing on ReceiptStatus {
   String value() {
