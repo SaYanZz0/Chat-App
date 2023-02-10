@@ -1,8 +1,8 @@
 import 'package:chat/chat.dart';
 import 'package:chat/src/models/receipt.dart';
-import 'package:flutter_newapp/src/data/data_sources/database_contract.dart';
-import 'package:flutter_newapp/src/models/local_message.dart';
-import 'package:flutter_newapp/src/models/chat.dart';
+import 'package:flutter_newapp/src/data/Services/database_contract.dart';
+import 'package:flutter_newapp/src/data/models/local_message.dart';
+import 'package:flutter_newapp/src/data/models/chat.dart';
 import 'package:sqflite/sqflite.dart';
 
 class SqfliteDatasource implements IdataSource {
