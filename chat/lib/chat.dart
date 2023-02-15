@@ -13,3 +13,4 @@ export 'package:chat/src/services/user/user_services_contract.dart';
 export 'package:chat/src/services/user/user_service.dart';
 export 'package:chat/src/services/typing_event/typing_event_implem.dart';
 export 'package:chat/src/services/typing_event/typing_event_contract.dart';
+export 'package:chat/src/models/typing_event.dart';
