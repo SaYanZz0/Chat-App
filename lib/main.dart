@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_newapp/core/app_theme.dart';
-import 'package:flutter_newapp/src/presentation/screen/onBoarding/onboarding.dart';
 
-void main() {
+import 'composition_root.dart';
+
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await CompositionRoot.configure();
   runApp(const MyApp());
 }
 
@@ -13,10 +16,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Chat App',
+      debugShowCheckedModeBanner: false,
       theme: lightTheme(context),
       darkTheme: darkTheme(context),
-      home: const OnBoardingScreen(),
+      home: CompositionRoot.composeOnboardingUi(),
     );
   }
 }

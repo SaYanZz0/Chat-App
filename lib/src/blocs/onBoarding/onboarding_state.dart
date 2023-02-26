@@ -10,8 +10,14 @@ class OnBoardingInitial extends OnBoardingState {
 }
 
 class Loading extends OnBoardingState {
+  @override
+  // TODO: implement props
+  List<Object?> get props => [];
+}
+
+class OnboardingSuccess extends OnBoardingState {
   final User user;
-  Loading(this.user);
+  OnboardingSuccess(this.user);
   @override
   List<Object?> get props => [user];
 }
