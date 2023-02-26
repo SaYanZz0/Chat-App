@@ -624,7 +624,7 @@ packages:
     source: hosted
     version: "1.2.1"
   rethink_db_ns:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: rethink_db_ns
       sha256: dac14016cd8a40dfcaed63ac956b11bc8a7a0328f52e35f8a5f8abc644f0ab87
